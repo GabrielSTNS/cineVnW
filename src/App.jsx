@@ -46,8 +46,8 @@ const App = () => {
                 <div className="play">▶</div>
               </div>
               <h2>{item.title}</h2>
-              <h3>{Math.ceil(item.vote_average)}</h3>
-              <div>⭐⭐⭐⭐☆</div>
+              <h3>{Math.ceil(item.vote_average)}/10</h3>
+              <div className="star">⭐⭐⭐⭐☆</div>
             </article>
           ))}
         </section>
