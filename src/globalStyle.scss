@@ -57,7 +57,7 @@ main {
 }
 
 .boxCard {
-  margin: 40px;
+  padding: 40px;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -66,6 +66,7 @@ main {
 
 .card {
   width: 220px;
+  height: 450px;
   background-color: #0f0f0f;
   border-radius: 12px;
   overflow: hidden;
@@ -73,11 +74,15 @@ main {
   cursor: pointer;
   transition: transform 0.3s ease;
   &:hover {
-    transform: translatey(-6px);
+    transform: translateY(-6px);
   }
   h2,
   h3 {
     margin: 12px;
+  }
+  h2 {
+    width: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -92,7 +97,7 @@ main {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: yellow;
+    background-color: #f5c518;
     color: #000;
     font-weight: bold;
     padding: 4px 8px;
@@ -113,5 +118,21 @@ main {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.star {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 570px) {
+  header {
+    height: 150px;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 15px;
   }
 }
